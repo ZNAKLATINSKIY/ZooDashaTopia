@@ -144,7 +144,6 @@
         </div>
       </div>
 
-      <!-- RIGHT SIDE -->
       <div class="zoo-right">
         <div class="schedule green">
           <h3>TODAY AT THE ZOO</h3>
@@ -187,12 +186,10 @@
   <section class="conservation">
     <div class="container">
       
-      <!-- IMAGE -->
       <div class="image-wrapper">
         <img src="../assets/Snow_Leopard_Looking_Up.jpg"" alt="Leopard" />
       </div>
 
-      <!-- CARDS -->
       <div class="leo__cards">
         
         <div class="leo__cards-card">
@@ -225,7 +222,6 @@
   <section class="zoo-footer">
     <div class="container">
       
-      <!-- TOP NAV -->
       <div class="top-nav">
         <a href="#">ZOO MAP</a>
         <span>|</span>
@@ -240,12 +236,10 @@
         <a href="#">CAREERS</a>
       </div>
 
-      <!-- LOGO -->
       <div class="logo-wrapper">
         <img src="../assets/logo.png" alt="Staten Island Zoo Logo">
       </div>
 
-      <!-- BOTTOM LINKS -->
       <div class="bottom-nav">
         <a href="#">VISITOR RULES</a>
         <a href="#">VISITOR RULES</a>
@@ -272,7 +266,6 @@
   color: white;
 }
 
-/* ===== IMAGES ===== */
 
 .wild__images {
   display: flex;
@@ -293,7 +286,6 @@
   font-size: 20px;
 }
 
-/* ===== CONTENT ===== */
 
 .wild__title {
   font-family: Inter;
@@ -389,7 +381,6 @@
   color: #045703;
 }
 
-/* ===== CARDS ===== */
 
 .cards {
   display: flex;
@@ -452,7 +443,6 @@
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-/* ===== EVENTS ===== */
 
 .events {
   margin-top: 120px;
@@ -502,7 +492,6 @@
   margin-top: 24px;
 }
 
-/* ===== BIG IMAGE ===== */
 .zoo {
   display: flex;
 }
@@ -517,7 +506,6 @@
   min-height: 600px;
 }
 
-/* LEFT */
 .zoo-left {
   flex: 1;
   display: flex;
@@ -560,7 +548,6 @@
   background: #0f5c4b;
 }
 
-/* RIGHT */
 .zoo-right {
   flex: 1;
   display: flex;
@@ -648,7 +635,6 @@
 }
 
 
-/* IMAGE */
 .image-wrapper {
   width: 100%;
   margin-bottom: 40px;
@@ -658,7 +644,6 @@
   width: 100%;
 }
 
-/* CARDS */
 .leo__cards {
   display: flex;
   gap: 40px;
@@ -707,7 +692,6 @@ font-family: Inter;
 }
 
 
-/* TOP NAV */
 .top-nav {
   background: #0f5c4b;
   color: white;
@@ -730,7 +714,6 @@ font-family: Inter;
   margin: 0 15px 0 15px;
 }
 
-/* LOGO */
 .logo-wrapper {
   text-align: center;
   padding: 40px 0;
@@ -740,7 +723,6 @@ font-family: Inter;
   height: 80px;
 }
 
-/* BOTTOM NAV */
 .bottom-nav {
   display: flex;
   justify-content: space-between;
