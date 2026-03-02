@@ -45,7 +45,6 @@
       </div>
     </div>
     
-
   </section>
 
   <section class="discover">
@@ -120,6 +119,142 @@
       <div class="events__image">
         <img src="../assets/tigers.jpg" alt="карт.тигров">
       </div>
+    </div>
+  </section>
+
+  <section class="zoo-section">
+    <div class="container">
+     <div class="zoo">
+       <div class="zoo-left">
+        <div class="info-block">
+          <h2>ABOUT OUR ZOO</h2>
+          <p>
+            With a wealth of educational programs and exhibits,
+            there's always more to discover at the Staten Island Zoo.
+          </p>
+          <button class="btn orange">Learn more</button>
+        </div>
+
+        <div class="info-block">
+          <h2>ABOUT MEMBERSHIPS</h2>
+          <p>
+            With a wealth of educational programs and exhibits.
+          </p>
+          <button class="btn green">Learn more</button>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="zoo-right">
+        <div class="schedule green">
+          <h3>TODAY AT THE ZOO</h3>
+          <ul>
+            <li><span class="time">10:00 AM</span> Zoo Opens</li>
+            <li><span class="time">11:30 AM</span> Animal Feeding</li>
+            <li><span class="time">1:30 PM</span> Animal Feeding</li>
+            <li><span class="time">2:30 PM</span> Animal Feeding</li>
+            <li><span class="time">3:30 PM</span> Animal Feeding</li>
+            <li><span class="time">4:00 PM</span> Animal Feeding</li>
+          </ul>
+
+          <div class="full-schedule">
+            <span class="dot dorg"></span>
+            <a href="#" class="dot__link">VIEW FULL SCHEDULE</a>
+          </div>
+        </div>
+
+        <div class="schedule orange">
+          <h3>TODAY AT THE ZOO</h3>
+          <ul>
+            <li><span class="time">10:00 AM</span> Zoo Opens</li>
+            <li><span class="time">11:30 AM</span> Animal Feeding</li>
+            <li><span class="time">1:30 PM</span> Animal Feeding</li>
+            <li><span class="time">2:30 PM</span> Animal Feeding</li>
+            <li><span class="time">3:30 PM</span> Animal Feeding</li>
+            <li><span class="time">4:00 PM</span> Animal Feeding</li>
+          </ul>
+
+          <div class="full-schedule">
+            <span class="dot dgrn"></span>
+            <a href="#" class="dot__link-green">VIEW FULL SCHEDULE</a>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+  </section>
+
+  <section class="conservation">
+    <div class="container">
+      
+      <!-- IMAGE -->
+      <div class="image-wrapper">
+        <img src="../assets/Snow_Leopard_Looking_Up.jpg"" alt="Leopard" />
+      </div>
+
+      <!-- CARDS -->
+      <div class="leo__cards">
+        
+        <div class="leo__cards-card">
+          <span class="label">CONSERVATION</span>
+          <h2>EDUCATION</h2>
+          <p>
+            Explore our rich legacy of saving animals, from birds to snow
+            leopards, and learn about our ongoing efforts. At the Staten Island Zoo,
+            we take pride in our history of successful animal conservation
+          </p>
+          <button class="btn">Learn more</button>
+        </div>
+
+        <div class="leo__cards-card">
+          <span class="label">CONSERVATION</span>
+          <h2>VIRTUAL ZOO</h2>
+          <p>
+            Explore our rich legacy of saving animals, from birds to snow
+            leopards, and learn about our ongoing efforts. At the Staten Island Zoo,
+            we take pride in our history of successful animal conservation
+          </p>
+          <button class="btn">Learn more</button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="zoo-footer">
+    <div class="container">
+      
+      <!-- TOP NAV -->
+      <div class="top-nav">
+        <a href="#">ZOO MAP</a>
+        <span>|</span>
+        <a href="#">VOLUNTEERING</a>
+        <span>|</span>
+        <a href="#">TEENS</a>
+        <span>|</span>
+        <a href="#">CORPORATIONS</a>
+        <span>|</span>
+        <a href="#">PARTIES & EVENTS</a>
+        <span>|</span>
+        <a href="#">CAREERS</a>
+      </div>
+
+      <!-- LOGO -->
+      <div class="logo-wrapper">
+        <img src="../assets/logo.png" alt="Staten Island Zoo Logo">
+      </div>
+
+      <!-- BOTTOM LINKS -->
+      <div class="bottom-nav">
+        <a href="#">VISITOR RULES</a>
+        <a href="#">VISITOR RULES</a>
+        <a href="#">VISITOR RULES</a>
+        <a href="#">VISITOR RULES</a>
+        <a href="#">VISITOR RULES</a>
+        <a href="#">VISITOR RULES</a>
+      </div>
+
     </div>
   </section>
 </template>
@@ -230,7 +365,6 @@
   align-items: flex-end;
   margin-bottom: 50px;
 }
-
 
 .span__title-one {
   font-family: Inter;
@@ -369,11 +503,256 @@
 }
 
 /* ===== BIG IMAGE ===== */
-
+.zoo {
+  display: flex;
+}
 .events__image {
   margin-top: -140px;
   display: flex;
   justify-content: center;
 }
 
+.zoo-section {
+  display: flex;
+  min-height: 600px;
+}
+
+/* LEFT */
+.zoo-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+
+.info-block h2 {
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 50px;
+  color: #035748;
+}
+
+.info-block p {
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 36px;
+  color: #000;
+}
+
+.btn {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  width: 172px;
+  height: 54px; 
+  margin-top: 29px;
+  border: none;
+}
+
+.btn.orange {
+  background: #f7931e;
+}
+
+.btn.green {
+  background: #0f5c4b;
+}
+
+/* RIGHT */
+.zoo-right {
+  flex: 1;
+  display: flex;
+}
+
+.schedule {
+  flex: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.schedule.green {
+  background: #0f5c4b;
+}
+
+.schedule.orange {
+  background: #f7931e;
+}
+
+.schedule h3 {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+}
+
+.schedule ul {
+  list-style: none;
+  padding: 0;
+}
+
+.schedule li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.time {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.full-schedule {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.dorg {
+  background: #f28c00;
+}
+.dgrn {
+  background: #035748;
+}
+.dot__link {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #f48400;
+}
+.dot__link-green {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #035748;
+}
+
+.conservation {
+  padding: 60px 0;
+}
+
+
+/* IMAGE */
+.image-wrapper {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.image-wrapper img {
+  width: 100%;
+}
+
+/* CARDS */
+.leo__cards {
+  display: flex;
+  gap: 40px;
+}
+
+.leo__cards-card {
+  flex: 1;
+  background: #0f5c4b;
+  color: white;
+  padding: 40px;
+}
+
+.label {
+font-family: Inter;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+}
+
+.leo__cards-card h2 {
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 64px;
+  color: #fff;
+}
+
+.leo__cards-card p {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+}
+
+.btn {
+  background: #f7931e;
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.zoo-footer {
+  padding-bottom: 30px;
+  padding-top: 240px;
+}
+
+
+/* TOP NAV */
+.top-nav {
+  background: #0f5c4b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.top-nav a {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-nav span {
+  margin: 0 15px 0 15px;
+}
+
+/* LOGO */
+.logo-wrapper {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.logo-wrapper img {
+  height: 80px;
+}
+
+/* BOTTOM NAV */
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: #035748;
+}
 </style>
