@@ -1,9 +1,10 @@
 <script setup>
 import Homepage from './views/Homepage.vue';
+import Pagetwo from './views/Pagetwo.vue';
 </script>
 
 <template>
-  <Homepage />
+  <Pagetwo />
 
 </template>
 
