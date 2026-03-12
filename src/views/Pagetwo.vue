@@ -84,7 +84,7 @@ export default {
         },
         {
           id: 4,
-          title: 'Императорский пингвин',
+          title: 'Малый пингвин',
           description: 'Житель Антарктиды',
           imageUrl: ''
         },
