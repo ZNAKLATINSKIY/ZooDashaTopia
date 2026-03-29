@@ -1,7 +1,6 @@
 import { collection, addDoc, getDocs, query, where } from "firebase/firestore";
 import { auth, db } from "../firebase/firebase";
 
-// создать животное
 export async function createAnimal(name, type, areaId) {
   await addDoc(collection(db, "animals"), {
     name: name,
@@ -12,7 +11,6 @@ export async function createAnimal(name, type, areaId) {
   });
 }
 
-// получить животных текущего пользователя
 export async function getMyAnimals() {
   const q = query(
     collection(db, "animals"),
