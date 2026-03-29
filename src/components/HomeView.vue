@@ -235,7 +235,6 @@
 </template>
 
 <script>
-// SVG-заглушка — используем ту же что в App.vue
 const FALLBACK_IMG = `data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'><rect width='300' height='200' fill='%23f0ede6'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-size='52'>🦁</text></svg>`;
 
 export default {
@@ -250,7 +249,6 @@ export default {
       currentPage: 1,
       perPage: 8,
       newsletterEmail: '',
-      // ✅ ИСПРАВЛЕНО: вычисляем в data, а не через Math.random() в шаблоне
       liveVisitors: Math.floor(Math.random() * 200) + 100,
       weatherTemp: Math.floor(Math.random() * 10) + 15,
       infoBanners: [
@@ -303,7 +301,6 @@ export default {
       const date = ts.toDate ? ts.toDate() : new Date(ts);
       return date.toLocaleDateString('ru-RU', { day: 'numeric', month: 'short' });
     },
-    // ✅ ИСПРАВЛЕНО: onerror = null предотвращает бесконечный цикл
     handleImgError(e) {
       e.target.onerror = null;
       e.target.src = FALLBACK_IMG;
