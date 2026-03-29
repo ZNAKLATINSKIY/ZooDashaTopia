@@ -2,7 +2,6 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "fire
 import { doc, setDoc } from "firebase/firestore";
 import { auth, db } from "../firebase/firebase";
 
-// регистрация
 export async function registerUser(email, password, name) {
   const userCredential = await createUserWithEmailAndPassword(auth, email, password);
 
@@ -13,7 +12,6 @@ export async function registerUser(email, password, name) {
   });
 }
 
-// вход
 export async function loginUser(email, password) {
   return await signInWithEmailAndPassword(auth, email, password);
 }
