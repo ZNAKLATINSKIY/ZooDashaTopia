@@ -142,12 +142,11 @@ export default {
   padding: 0 1rem;
 }
 
-/* Вкладки (Табы) */
 .admin-tabs {
   display: flex;
   gap: 1rem;
   margin-bottom: 2rem;
-  overflow-x: auto; /* Прокрутка на мобильных, если не влазит */
+  overflow-x: auto;
   padding-bottom: 0.5rem;
   -webkit-overflow-scrolling: touch;
 }
@@ -174,7 +173,6 @@ export default {
   box-shadow: 0 4px 6px rgba(16, 185, 129, 0.2);
 }
 
-/* Шапка секции */
 .admin-section-header {
   display: flex;
   justify-content: space-between;
@@ -204,7 +202,6 @@ export default {
   background: #2563eb;
 }
 
-/* Формы добавления */
 .admin-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -228,7 +225,7 @@ export default {
 }
 
 .admin-form textarea {
-  grid-column: 1 / -1; /* Растягиваем на всю ширину */
+  grid-column: 1 / -1;
   resize: vertical;
 }
 
@@ -252,7 +249,6 @@ export default {
   color: white;
 }
 
-/* Таблицы */
 .admin-table {
   display: flex;
   flex-direction: column;
@@ -307,17 +303,15 @@ export default {
   background: #dc2626;
 }
 
-/* АДАПТИВНОСТЬ ДЛЯ ТЕЛЕФОНОВ */
 @media (max-width: 768px) {
   .admin-form {
-    grid-template-columns: 1fr; /* Поля формы друг под другом */
+    grid-template-columns: 1fr;
   }
 
   .header-row {
-    display: none; /* Прячем шапку таблицы на телефоне */
+    display: none;
   }
 
-  /* Превращаем строки в карточки */
   .admin-row {
     flex-direction: column;
     align-items: flex-start;
@@ -329,7 +323,7 @@ export default {
     width: 100%;
     white-space: normal;
     display: flex;
-    justify-content: space-between; /* Текст слева, значение справа */
+    justify-content: space-between;
     border-bottom: 1px solid #f1f5f9;
     padding-bottom: 0.5rem;
   }
@@ -345,7 +339,7 @@ export default {
   }
 
   .btn-delete {
-    width: 100%; 
+    width: 100%;
     padding: 0.75rem;
   }
 }

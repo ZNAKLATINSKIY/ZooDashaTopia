@@ -229,10 +229,8 @@ export default {
         this.$emit('remove-from-cart', item.id);
         return;
       }
-      // Update qty - handled via Firestore in parent if needed
     },
     async increaseQty(item) {
-      // Update qty
     },
     async saveProfile() {
       try {
